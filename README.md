@@ -39,3 +39,12 @@
     Given "bbbbb", the answer is "b", with the length of 1.
 
     Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a    subsequence and not a substring.
+
+# 5. Moving Zero's to the End of an Array (Inplace and extra array)
+    Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+    For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+
+    Note:
+    You must do this in-place without making a copy of the array.
+    Minimize the total number of operations.
