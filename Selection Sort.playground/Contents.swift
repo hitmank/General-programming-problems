@@ -26,3 +26,9 @@ print(input)
 SelectionSort(arr: &input);
 print("After sorting :")
 print(input)
+var s = ""
+let x = (5,6)
+s.append("a")
+print(s)
+
+Int.ma
