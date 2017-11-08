@@ -61,3 +61,50 @@
       [-1, 0, 1],
       [-1, -1, 2]
     ]
+
+# 7. Convert Binary tree to Doubly Linked List (Inorder)
+    Given a Binary Tree (Bt), convert it to a Doubly Linked List(DLL). The left and right pointers in nodes are to be used as previous and next pointers respectively in converted DLL. The order of nodes in DLL must be same as Inorder of the given Binary Tree. The first node of Inorder traversal (left most node in BT) must be head node of the DLL.
+
+# 8. Quicksort Algorithm
+
+# 9. Mergesort Algorithm
+
+# 10. Graph - Depth first search (Recursive and iterative)
+    Using the call stack (recursion) or custom Stack struct
+
+# 11. Graph - BFS
+    Using custom Queue
+
+# 12. Topological ordering in a Directed Acyclic Graph (DAG)
+    Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
+    In DFS, we print a vertex and then recursively call DFS for its adjacent vertices. In topological sorting, we need to print a vertex before its adjacent vertices.
+    Using cusotm stack
+
+# 13. Insertion Sort
+
+# 14. Selection Sort
+
+# 15. Longest path in DAG
+    Given a Weighted Directed Acyclic Graph (DAG) and a source vertex s in it, find the longest distances from s to all other vertices in the given graph.
+
+    The longest path problem for a general graph is not as easy as the shortest path problem because the longest path problem doesn’t have optimal substructure property. In fact, the Longest Path problem is NP-Hard for a general graph. However, the longest path problem has a linear time solution for directed acyclic graphs. The idea is similar to linear time solution for shortest path in a directed acyclic graph., we use Tological Sorting.
+    
+# 16.Connected Components in undirected Graph
+    Finding connected components for an undirected graph is an easier task. We simple need to do either BFS or DFS starting from every unvisited vertex, and we get all strongly connected components. Below are steps based on DFS.
+
+    1) Initialize all vertices as not visited.
+    2) Do following for every vertex 'v'.
+           (a) If 'v' is not visited before, call DFSUtil(v)
+           (b) Print new line character
+
+    DFSUtil(v)
+    1) Mark 'v' as visited.
+    2) Print 'v'
+    3) Do following for every adjacent 'u' of 'v'.
+         If 'u' is not visited, then recursively call DFSUtil(u)
+
+# 17.Least Common Ancestor in a Binary Tree
+    Let T be a rooted tree. The lowest common ancestor between two nodes n1 and n2 is defined as the lowest node in T that has both n1 and n2 as descendants (where we allow a node to be a descendant of itself).
+
+    The LCA of n1 and n2 in T is the shared ancestor of n1 and n2 that is located farthest from the root.
+
