@@ -1,5 +1,6 @@
 # General-programming-problems
-
+  The usual interview problems and some more!
+  
 # 1. Two Sum Problem
     Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
