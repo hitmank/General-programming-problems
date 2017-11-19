@@ -51,7 +51,7 @@ func swapElements( arr: inout [Int], pos1: Int, pos2: Int){
     arr[pos2] = tmp
 }
 
-var input = [-1,0,23,1,94,0,2]
+var input = [14,4,5,1,76,2,12,1,1]
 print("Unsorted:")
 print(input)
 quickSort(arr: &input, left: 0, right: input.count-1)
