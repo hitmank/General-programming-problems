@@ -1,0 +1,15 @@
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var hashMap : [Int: Int] = [Int:Int]()
+        for (index, value) in nums.enumerated(){
+            if let position = hashMap[value]{
+                return [position, index]
+            }
+            else{
+                let compliment = target - value
+                hashMap[compliment] = index
+            }
+        }
+        return [-1,-1]
+    }
+}
