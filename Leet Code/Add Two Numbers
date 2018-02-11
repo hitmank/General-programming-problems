@@ -1,0 +1,45 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     public var val: Int
+ *     public var next: ListNode?
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.next = nil
+ *     }
+ * }
+ */
+class Solution {
+    func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var carry : Int = 0
+        var previousNode : ListNode?
+        var answer : ListNode? 
+        var node1 = l1
+        var node2 = l2
+        
+        while((node1 != nil) || (node2 != nil)){
+           let node1Value = node1 != nil ? node1!.val : 0
+           let node2Value = node2 != nil ? node2!.val : 0 
+            
+           let value = node1Value + node2Value + carry; 
+           let localCarry = value / 10
+           let localValue = value % 10
+           var newNode = ListNode(localValue)
+           if(previousNode != nil){
+               previousNode!.next = newNode
+           } 
+           else{
+               answer = newNode
+           }
+           previousNode = newNode
+           carry = localCarry
+           node1 = node1?.next
+           node2 = node2?.next 
+        }
+        if(carry>0){
+            var newNode = ListNode( carry)
+            previousNode!.next = newNode
+        }
+        return answer
+    }
+}
