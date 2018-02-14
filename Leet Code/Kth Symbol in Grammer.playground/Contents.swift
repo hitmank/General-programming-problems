@@ -39,7 +39,7 @@ class Solution {
         }
         
         return current
-        
+    
     }
 }
 enum direction{
