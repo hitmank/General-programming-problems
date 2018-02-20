@@ -108,4 +108,21 @@
     Let T be a rooted tree. The lowest common ancestor between two nodes n1 and n2 is defined as the lowest node in T that has both n1 and n2 as descendants (where we allow a node to be a descendant of itself).
 
     The LCA of n1 and n2 in T is the shared ancestor of n1 and n2 that is located farthest from the root.
+    
+# 18.Leet Code : Letter Case Permutation
+    Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
+
+    Examples:
+    Input: S = "a1b2"
+    Output: ["a1b2", "a1B2", "A1b2", "A1B2"]
+
+    Input: S = "3z4"
+    Output: ["3z4", "3Z4"]
+
+    Input: S = "12345"
+    Output: ["12345"]
+    Note:
+
+    S will be a string with length at most 12.
+    S will consist only of letters or digits.
 
